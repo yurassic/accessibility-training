@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Accessibility 2022</title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
@@ -10,7 +11,7 @@
 </head>
 
 <body>
-  <div class="hero">
+  <header class="hero">
     <div class="hero-head">
       <div class="navbar">
         <div class="container">
@@ -25,10 +26,10 @@
             </button>
           </div>
 
-          <div id="navbarMenu" class="navbar-menu">
+          <nav id="navbarMenu" class="navbar-menu">
             <ul class="navbar-end">
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a href="/o" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-home"></i>
                   </span>
@@ -36,7 +37,7 @@
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined with-sublist">
+                <a href="/todo" class="button is-white is-outlined with-sublist">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
                   </span>
@@ -51,7 +52,7 @@
                 </ul>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a href="/todo" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
@@ -59,7 +60,7 @@
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a href="/todo" class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -67,11 +68,11 @@
                 </a>
               </span>
             </ul>
-          </div>
+          </nav>
         </div>
       </div>
     </div>
-  </div>
+  </header>
 
   <div class="hero-bg hero-body is-fullheight">
     <div class="container has-text-centered">
@@ -86,16 +87,16 @@
       <div class="column is-8 is-offset-2">
       <div class="title is-2">Would you like to get the latest news?</div>
         <div class="subtitle is-5">Subscribe to our events, updates and more</div>
-      <div class="box has-background-grey-light">
+      <form class="box has-background-grey-light">
         <div class="field is-grouped">
           <p class="control is-expanded">
-            <input class="input">
+            <input type="email" class="input" placeholder="Your email">
           </p>
           <p class="control">
-            <a class="button is-info">Notify Me</a>
+            <input type="submit" class="button is-info" value="Notify Me">
           </p>
         </div>
-      </div>
+      </form>
       </div>
     </div>
 
@@ -210,7 +211,7 @@
                   <div>Best customer's story</div>
                   <p>We have achieved customer satisfaction and income increase after having implemented accessibility.</p>
                   <p>That's a real magic!</p>
-                  <span class="button is-link modal-button" data-target="modal-image1">Learn more</span>
+                  <a href="/todo" role="button" class="button is-link modal-button" data-target="modal-image1">Learn more</a>
                 </div>
               </div>
             </div>
@@ -227,7 +228,7 @@
                   <div>Other Best customer's story.</div>
                   <p>We were not so sure in success but we have had lots of new customers after implementing accessibility.</p>
                   <p>We will recommend Best Company to our friends!</p>
-                  <span class="button is-link modal-button" data-target="modal-card">Learn more</span>
+                  <a href="/todo" role="button" class="button is-link modal-button" data-target="modal-card">Learn more</a>
                 </div>
               </div>
             </div>
@@ -298,7 +299,7 @@
             </div>
             <p class="title">Accessibility event in Los Angeles</p>
             <p class="subtitle">Fri 27 Nov 2023</p>
-            <a class="button">Buy Tickets</a>
+            <a href="/todo" class="button">Buy Tickets</a>
           </div>
         </div>
         <div class="tile is-parent">
@@ -308,7 +309,7 @@
             </div>
             <p class="title">Accessibility event in Paris</p>
             <p class="subtitle">Fri 27 Nov 2023</p>
-            <a class="button">Buy Tickets</a>
+            <a href="/todo" class="button">Buy Tickets</a>
           </div>
         </div>
       </div>
@@ -389,11 +390,11 @@
         <div class="field">
           <div class="control">
             <label class="radio">
-              <input type="radio" name="question">
+              <input type="radio" name="yes">
               Yes
             </label>
             <label class="radio">
-              <input type="radio" name="question">
+              <input type="radio" name="no">
               No
             </label>
           </div>
@@ -419,7 +420,7 @@
       </div>
       <div class="columns">
         <div class="column is-3">
-          <a class="button is-primary is-block is-alt is-large">New Post</a>
+          <a href="/todo" class="button is-primary is-block is-alt is-large">New Post</a>
         </div>
         <div class="column is-9">
           <div class="box content">
@@ -434,7 +435,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a>@jsmith</a> replied 34 minutes ago &nbsp;
+                      <a href="/todo" tabindex="-1">@jsmith</a> replied 34 minutes ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
@@ -456,7 +457,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a>@red</a> replied 40 minutes ago &nbsp;
+                      <a href="/todo" tabindex="-1">@red</a> replied 40 minutes ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
@@ -478,25 +479,25 @@
         <div class="column is-3 is-offset-4">
           <div class="is-3 title"><b>News</b></div>
           <ul>
-            <li><a>Latest changes in specification</a></li>
-            <li><a>Our new courses and trainings</a></li>
+            <li><a href="/todo">Latest changes in specification</a></li>
+            <li><a href="/todo">Our new courses and trainings</a></li>
           </ul>
         </div>
         <div class="column is-4">
           <div class="is-3 title"><b>Help</b></div>
           <ul>
-            <li><a>Useful links</a></li>
-            <li><a>How to find us</a></li>
+            <li><a href="/todo">Useful links</a></li>
+            <li><a href="/todo">How to find us</a></li>
           </ul>
         </div>
       </div>
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a><i class="fab fa-github-alt fa-2x"></i></a>
-          <a><i class="fab fa-youtube fa-2x"></i></a>
+          <a href="/todo"><i class="fab fa-github-alt fa-2x"></i></a>
+          <a href="/todo"><i class="fab fa-youtube fa-2x"></i></a>
         </div>
-        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+        <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>.</p>
       </div>
     </div>
   </div>

@@ -380,19 +380,19 @@
             <h2 class="title is-2">Contact us</h2>
             <h3 class="subtitle is-5">Don't hesitate, ask anything</h3>
           </div>
-
-          <form class="column is-half is-offset-one-quarter box">
-            <div class="field">
-              <label class="label">Name</label>
+          <form class="column is-half is-offset-one-quarter box" action="#" method="post">
+            <fieldset class="field">
+              <label class="label" for="name">Name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input id="name" class="input" type="text" placeholder="Enter your name"
+                  name="name">
               </div>
-            </div>
+            </fieldset>
 
-            <div class="field">
-              <label class="label">Username</label>
+            <fieldset class="field">
+              <label class="label" for="username">Username</label>
               <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text">
+                <input id="username" class="input is-success" type="text" name="username">
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -401,13 +401,13 @@
                 </span>
               </div>
               <p class="help is-success">This username is available</p>
-            </div>
+            </fieldset>
 
-            <div class="field">
-              <label class="label">Email</label>
+            <fieldset class="field">
+              <label class="label" for="email">Email</label>
               <div class="control has-icons-left has-icons-right">
-                <input class="input is-danger" type="email"
-                  placeholder="Email input" value="hello@">
+                <input id="email" class="input is-danger" type="email"
+                  placeholder="Enter your email" name="email" value="hello@">
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -416,57 +416,57 @@
                 </span>
               </div>
               <p class="help is-danger">This email is invalid</p>
-            </div>
+            </fieldset>
 
-            <div class="field">
-              <label class="label">Subject</label>
+            <fieldset class="field">
+              <label class="label" for="subject">Subject</label>
               <div class="control">
                 <div class="select">
-                  <select>
+                  <select id="subject" name="subject">
                     <option>Select dropdown</option>
                     <option>With options</option>
                   </select>
                 </div>
               </div>
-            </div>
+            </fieldset>
 
-            <div class="field">
-              <label class="label">Message</label>
+            <fieldset class="field">
+              <label class="label" for="message">Message</label>
               <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
+                <textarea id="message" class="textarea" placeholder="Enter your message"
+                  name="message"></textarea>
               </div>
-            </div>
+            </fieldset>
 
-            <div class="field">
-              <div class="control">
-                <label class="checkbox">
-                  <input type="checkbox">
-                  I agree to the <a>terms and conditions</a>
-                </label>
-              </div>
-            </div>
+            <fieldset class="field">
+              <label class="checkbox">
+                <input id="terms" type="checkbox" name="terms">
+                I agree to the <a href="#">terms and conditions</a>
+              </label>
+            </fieldset>
 
-            <div class="field">
+            <fieldset class="field">
+              <legend class="label">Subscribe to our newsletters?</legend>
               <div class="control">
                 <label class="radio">
-                  <input type="radio" name="yes">
+                  <input id="yes" type="radio" name="yesno" value="yes">
                   Yes
                 </label>
                 <label class="radio">
-                  <input type="radio" name="no">
+                  <input id="no" type="radio" name="yesno" value="no">
                   No
                 </label>
               </div>
-            </div>
+            </fieldset>
 
-            <div class="field is-grouped">
+            <fieldset class="field is-grouped">
               <div class="control">
-                <button class="button is-link">Submit</button>
+                <button type="submit" class="button is-link">Submit</button>
               </div>
               <div class="control">
-                <button class="button is-text">Cancel</button>
+                <button type="button" class="button is-text">Cancel</button>
               </div>
-            </div>
+            </fieldset>
           </form>
         </div>
       </section>

@@ -257,3 +257,8 @@ li {
     /* It seems like at the moment nobody is quite sure why margin: -1px is there. On top of that it seems to cause issues (see: https://github.com/h5bp/html5-boilerplate/issues/1985). */
   margin: -1px;
 }
+
+/* Remove default border */
+fieldset.field {
+  border: none;
+}

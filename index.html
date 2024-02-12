@@ -4,6 +4,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+      describtion="Web Accessibility 2022 is a company that provides web accessibility services.">
     <title>Web Accessibility 2022</title>
     <link rel='stylesheet prefetch'
       href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
@@ -36,15 +38,15 @@
 
             <nav id="navbarMenu" class="navbar-menu">
               <ul class="navbar-end">
-                <span class="navbar-item">
+                <li class="navbar-item">
                   <a href="/" class="button is-white is-outlined">
                     <span class="icon">
                       <i class="fa fa-home"></i>
                     </span>
                     <span>Home</span>
                   </a>
-                </span>
-                <span class="navbar-item">
+                </li>
+                <li class="navbar-item">
                   <a href="/todo"
                     class="button is-white is-outlined with-sublist">
                     <span class="icon">
@@ -59,16 +61,16 @@
                     <li>Operate</li>
                     <li>Optimize</li>
                   </ul>
-                </span>
-                <span class="navbar-item">
+                </li>
+                <li class="navbar-item">
                   <a href="/todo" class="button is-white is-outlined">
                     <span class="icon">
                       <i class="fa fa-book"></i>
                     </span>
                     <span>Success stories</span>
                   </a>
-                </span>
-                <span class="navbar-item">
+                </li>
+                <li class="navbar-item">
                   <a href="/todo" target="_blank" rel="noopener noreferrer"
                     class="button is-white is-outlined">
                     <span class="icon">
@@ -77,7 +79,7 @@
                     <span>View Source</span>
                     <span class="visually-hidden">Opens in a new tab</span>
                   </a>
-                </span>
+                </li>
               </ul>
             </nav>
           </div>
@@ -112,6 +114,7 @@
             <form class="box has-background-grey-light">
               <div class="field is-grouped">
                 <p class="control is-expanded">
+                  <label class="visually-hidden" for="email">Email</label>
                   <input type="email" class="input" placeholder="Your email">
                 </p>
                 <p class="control">
@@ -143,7 +146,7 @@
 
         <div class="content container">
           <h3 class="is-1 title">OUR HISTORY</h3>
-          <p>Since 1989<sup><a>[1]</a></sup>, we deliver high quality
+          <p>Since 1989<sup><a href="/todo">[1]</a></sup>, we deliver high quality
             solutions to make your business more accessible.</p>
           <h4 class="is-2 title">1989</h4>
           <p>On February 1989, seventeen people met to talk, ski, relax, and
@@ -154,7 +157,7 @@
             <li>- We all want to deliver good products to customers.</li>
           </ul>
           <h4 class="is-3 title">2022</h4>
-          <p>Generally we have achieved <a>all our major goals</a>. And we are
+          <p>Generally we have achieved <a href="/todo">all our major goals</a>. And we are
             ready to help you to achieve yours</p>
           <div class="blockquote">Success usually comes to those who are too
             busy looking for it. - Henry David Thoreau</div>
@@ -253,13 +256,13 @@
                     </div>
                     <div class="card-content">
                       <div class="content">
-                        <div>Best customer's story</div>
+                        <h3>Best customer's story</h3>
                         <p>We have achieved customer satisfaction and income
                           increase after having implemented accessibility.</p>
                         <p>That's a real magic!</p>
-                        <a href="/todo" role="button"
+                        <button
                           class="button is-link modal-button"
-                          data-target="modal-image1">Learn more</a>
+                          data-target="modal-image1">Learn more</button>
                       </div>
                     </div>
                   </div>
@@ -274,13 +277,13 @@
                     </div>
                     <div class="card-content">
                       <div class="content">
-                        <div>Other Best customer's story.</div>
+                        <h3>Other Best customer's story.</h3>
                         <p>We were not so sure in success but we have had lots of
                           new customers after implementing accessibility.</p>
                         <p>We will recommend Best Company to our friends!</p>
-                        <a href="/todo" role="button"
+                        <button
                           class="button is-link modal-button"
-                          data-target="modal-card">Learn more</a>
+                          data-target="modal-card">Learn more</button>
                       </div>
                     </div>
                   </div>
@@ -298,10 +301,8 @@
                   </div>
                   <div class="media-content">
                     <div class="content">
-                      <p>
-                        <a><b>Solution architect</b></a>
-                        <br> Please read about our team happiness
-                      </p>
+                      <a href="/todo"><h3>Solution architect</h3></a>
+                      <p>Please read about our team happiness</p>
                     </div>
                   </div>
                 </div>
@@ -313,10 +314,8 @@
                   </div>
                   <div class="media-content">
                     <div class="content">
-                      <p>
-                        <a><b>Business Analyst</b></a>
-                        <br> Please read about BA growth opportunities
-                      </p>
+                      <a href="/todo"><h3>Business Analyst</h3></a>
+                      <p>Please read about BA growth opportunities</p>
                     </div>
                   </div>
                 </div>
@@ -356,7 +355,9 @@
                 </div>
                 <h1 class="title">Accessibility event in Los Angeles</h1>
                 <h2 class="subtitle">Fri 27 Nov 2023</h2>
-                <a href="/todo" class="button">Buy Tickets</a>
+                <a href="/todo" target="_blank" rel="noopener noreferrer" class="button">Buy Tickets
+                  <span class="visually-hidden">Opens in a new tab</span>
+                </a>
               </div>
             </article>
             <article class="tile is-parent">
@@ -367,7 +368,9 @@
                 </div>
                 <h1 class="title">Accessibility event in Paris</h1>
                 <h2 class="subtitle">Fri 27 Nov 2023</h2>
-                <a href="/todo" class="button">Buy Tickets</a>
+                <a href="/todo" class="button" target="_blank" rel="noopener noreferrer">Buy Tickets
+                  <span class="visually-hidden">Opens in a new tab</span>
+                </a>
               </div>
             </article>
           </div>
@@ -492,21 +495,21 @@
                       <p class="image is-32x32">
                         <img
                           src="https://source.unsplash.com/random/64x64/?sig=300"
-                          alt>
+                          alt="Jane Smith avatar">
                       </p>
                     </div>
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="/todo" tabindex="-1">@jsmith</a> replied 34
+                          <a href="/todo">@jsmith</a> replied 34
                           minutes ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i
-                          class="fa fa-comments"></i> 1</span>
+                      <a href="/todo" class="has-text-grey-light"><i
+                          class="fa fa-comments"></i> 1</a>
                     </div>
                   </div>
                 </article>
@@ -518,21 +521,21 @@
                       <p class="image is-32x32">
                         <img
                           src="https://source.unsplash.com/random/64x64/?sig=301"
-                          alt>
+                          alt="Red avatar">
                       </p>
                     </div>
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="/todo" tabindex="-1">@red</a> replied 40
+                          <a href="/todo">@red</a> replied 40
                           minutes ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i
-                          class="fa fa-comments"></i> 0</span>
+                      <a href="/todo" class="has-text-grey-light"><i
+                          class="fa fa-comments"></i> 0</a>
                     </div>
                   </div>
                 </article>
@@ -587,7 +590,7 @@
         <div class="card">
           <div class="card-image">
             <div class="image is-4by3">
-              <img src="https://source.unsplash.com/random/?sig=2" alt>
+              <img src="https://source.unsplash.com/random/?sig=2" alt="Ocean">
             </div>
           </div>
           <div class="card-content">
@@ -602,7 +605,7 @@
                 customers</p>
               <p>After we implemented accessibility features everything
                 changed</p>
-              <a>#responsive</a>
+              <a href="/todo">#responsive</a>
               <br>
               <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
             </div>
@@ -615,7 +618,7 @@
     <div id="modal-image1" class="modal modal-fx-3dSlit">
       <div class="modal-background"></div>
       <div class="modal-content is-huge is-image">
-        <img src="https://source.unsplash.com/random/?sig=1" alt>
+        <img src="https://source.unsplash.com/random/?sig=1" alt="Children in magic forest">
       </div>
       <button class="modal-close is-large"></button>
     </div>

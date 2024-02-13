@@ -231,21 +231,21 @@
 
         <div class="tabs is-boxed is-centered main-menu" id="nav">
           <!-- WARN: Role is useless, added for HW -->
-          <ul role="list">
-            <li data-target="pane-1" id="1" class="is-active" tabindex="0" role="button">
+          <ul role="list" role="tablist">
+            <li data-target="pane-1" id="1" class="is-active" tabindex="0" role="tab">
               <a>
                 <span class="icon is-small"><i class="fa fa-image"></i></span>
                 <span>Success stories</span>
               </a>
             </li>
-            <li data-target="pane-3" id="3" tabindex="0" role="button">
+            <li data-target="pane-3" id="3" tabindex="0" role="tab">
               <a>
                 <span class="icon is-small"><i
                     class="fab fa-superpowers"></i></span>
                 <span>Our team</span>
               </a>
             </li>
-            <li data-target="pane-4" id="4" tabindex="0" role="button">
+            <li data-target="pane-4" id="4" tabindex="0" role="tab">
               <a>
                 <span class="icon is-small"><i class="fa fa-film"></i></span>
                 <span>Video</span>
@@ -633,7 +633,8 @@
           </div>
         </div>
       </div>
-      <button class="modal-close is-large"></button>
+      <!-- WARNING: better to use button tag, added for HW -->
+      <div role="button" class="modal-close is-large"></div>
     </div>
 
     <!-- TODO: aria-modal should be set to true when modal is opened -->

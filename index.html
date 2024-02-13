@@ -29,7 +29,7 @@
               <a href="/" class="navbar-item logo-link">
                 <img src="./img/logo.png" alt="Best company logo">
               </a>
-              <button class="navbar-burger burger" data-target="navbarMenu">
+              <button class="navbar-burger burger" data-target="navbarMenu" aria-haspopup="menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -398,11 +398,11 @@
               <label class="label" for="username">Username</label>
               <div class="control has-icons-left has-icons-right">
                 <input id="username" class="input is-success" type="text" name="username"
-                  placeholder="Enter your username" aria-describedby="usernameHelp">
-                <span class="icon is-small is-left">
+                  placeholder="Enter your username" aria-describedby="usernameHelp" aria-invalid="false">
+                <span class="icon is-small is-left" aria-hidden="true">
                   <i class="fas fa-user"></i>
                 </span>
-                <span class="icon is-small is-right">
+                <span class="icon is-small is-right" aria-hidden="true">
                   <i class="fas fa-check"></i>
                 </span>
               </div>
@@ -415,11 +415,11 @@
               <div class="control has-icons-left has-icons-right">
                 <input id="email" class="input is-danger" type="email"
                   placeholder="Enter your email" name="email" value="hello@"
-                  aria-describedby="emailHelp">
-                <span class="icon is-small is-left">
+                  aria-describedby="emailHelp" aria-invalid="true">
+                <span class="icon is-small is-left" aria-hidden="true">
                   <i class="fas fa-envelope"></i>
                 </span>
-                <span class="icon is-small is-right">
+                <span class="icon is-small is-right" aria-hidden="true">
                   <i class="fas fa-exclamation-triangle"></i>
                 </span>
               </div>
@@ -589,7 +589,8 @@
       </div>
     </footer>
 
-    <div id="modal-card" class="modal modal-fx-3dSlit" role="dialog">
+    <!-- TODO: aria-modal should be set to true when modal is opened -->
+    <div id="modal-card" class="modal modal-fx-3dSlit" role="dialog" aria-modal="false">
       <div class="modal-background"></div>
       <div class="modal-content is-tiny">
         <div class="card">
@@ -620,7 +621,8 @@
       <button class="modal-close is-large"></button>
     </div>
 
-    <div id="modal-image1" class="modal modal-fx-3dSlit" role="dialog">
+    <!-- TODO: aria-modal should be set to true when modal is opened -->
+    <div id="modal-image1" class="modal modal-fx-3dSlit" role="dialog" aria-modal="false">
       <div class="modal-background"></div>
       <div class="modal-content is-huge is-image">
         <img src="https://source.unsplash.com/random/?sig=1" alt="Children in magic forest">

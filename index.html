@@ -47,13 +47,13 @@
                   </a>
                 </li>
                 <li class="navbar-item">
-                  <a href="/todo"
-                    class="button is-white is-outlined with-sublist">
+                  <button
+                    class="button is-white is-outlined with-sublist" aria-haspopup="true">
                     <span class="icon">
                       <i class="fab fa-superpowers"></i>
                     </span>
                     <span>Services</span>
-                  </a>
+                  </button>
                   <ul class="sublist visually-hidden">
                     <li>Design</li>
                     <li>Consult</li>
@@ -262,6 +262,7 @@
                         <p>That's a real magic!</p>
                         <button
                           class="button is-link modal-button"
+                          aria-haspopup="dialog"
                           data-target="modal-image1">Learn more</button>
                       </div>
                     </div>
@@ -283,6 +284,7 @@
                         <p>We will recommend Best Company to our friends!</p>
                         <button
                           class="button is-link modal-button"
+                          aria-haspopup="dialog"
                           data-target="modal-card">Learn more</button>
                       </div>
                     </div>
@@ -587,7 +589,7 @@
       </div>
     </footer>
 
-    <div id="modal-card" class="modal modal-fx-3dSlit">
+    <div id="modal-card" class="modal modal-fx-3dSlit" role="dialog">
       <div class="modal-background"></div>
       <div class="modal-content is-tiny">
         <div class="card">
@@ -618,7 +620,7 @@
       <button class="modal-close is-large"></button>
     </div>
 
-    <div id="modal-image1" class="modal modal-fx-3dSlit">
+    <div id="modal-image1" class="modal modal-fx-3dSlit" role="dialog">
       <div class="modal-background"></div>
       <div class="modal-content is-huge is-image">
         <img src="https://source.unsplash.com/random/?sig=1" alt="Children in magic forest">

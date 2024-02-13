@@ -50,14 +50,14 @@
                 </li>
                 <li class="navbar-item">
                   <button
-                    class="button is-white is-outlined with-sublist" aria-haspopup="true">
+                    class="button is-white is-outlined with-sublist" aria-controls="services-menu" aria-haspopup="menu">
                     <span class="icon">
                       <i class="fab fa-superpowers"></i>
                     </span>
                     <span>Services</span>
                   </button>
                   <!-- WARN: Role is useless, added for HW -->
-                  <ul class="sublist visually-hidden" role="list">
+                  <ul class="sublist hidden" id="services-menu" role="list" aria-hidden="true">
                     <li>Design</li>
                     <li>Consult</li>
                     <li>Engineer</li>

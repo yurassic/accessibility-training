@@ -16,7 +16,8 @@
 
   <body>
     <nav aria-label="Skip navigation links" class="visually-hidden">
-      <ul>
+      <!-- WARN: Role is useless, added for HW -->
+      <ul role="list">
         <li><a href="#main">Skip to main content</a></li>
       </ul>
     </nav>
@@ -37,7 +38,8 @@
             </div>
 
             <nav id="navbarMenu" class="navbar-menu">
-              <ul class="navbar-end">
+              <!-- WARN: Role is useless, added for HW -->
+              <ul class="navbar-end" role="list">
                 <li class="navbar-item">
                   <a href="/" class="button is-white is-outlined">
                     <span class="icon">
@@ -54,7 +56,8 @@
                     </span>
                     <span>Services</span>
                   </button>
-                  <ul class="sublist visually-hidden">
+                  <!-- WARN: Role is useless, added for HW -->
+                  <ul class="sublist visually-hidden" role="list">
                     <li>Design</li>
                     <li>Consult</li>
                     <li>Engineer</li>
@@ -92,14 +95,17 @@
       <div class="hero-bg hero-body is-fullheight">
         <div class="container has-text-centered">
           <div class="column is-10 is-offset-1">
-            <h1 class="title has-text-white">We have web accessibility in
+            <!-- WARN: Role is useless, added for HW -->
+            <h1 class="title has-text-white" role="heading" aria-level="1">We have web accessibility
+              in
               mind</h1>
           </div>
         </div>
       </div>
 
       <nav class="breadcrumb container" aria-label="breadcrumbs">
-        <ul>
+        <!-- WARN: Role is useless, added for HW -->
+        <ul role="list">
           <li><a href="#">Home</a></li>
           <li class="is-active" aria-current="page"><a href="#">Who we are?</a></li>
         </ul>
@@ -108,8 +114,11 @@
       <section class="section" id="subscription" aria-label="Subscription section">
         <div class="section-heading has-text-centered">
           <div class="column is-8 is-offset-2">
-            <h2 class="title is-2">Would you like to get the latest news?</h2>
-            <h3 class="subtitle is-5">Subscribe to our events, updates and
+            <!-- WARN: Role is useless, added for HW -->
+            <h2 class="title is-2" role="heading" aria-level="2">Would you like to get the latest
+              news?</h2>
+            <h3 class="subtitle is-5" role="heading" aria-level="3">Subscribe to our events, updates
+              and
               more</h3>
             <form class="box has-background-grey-light">
               <div class="field is-grouped">
@@ -151,7 +160,8 @@
           <h4 class="is-2 title">1989</h4>
           <p>On February 1989, seventeen people met to talk, ski, relax, and
             try to find common ground.</p>
-          <ul>
+          <!-- WARN: Role is useless, added for HW -->
+          <ul role="list">
             <li>- We all felt privileged to work with a group of people who
               held a set of compatible value.</li>
             <li>- We all want to deliver good products to customers.</li>
@@ -167,7 +177,8 @@
             gain in-demand skills.</p>
           <h4 class="is-2 title">2023</h4>
           <p>Please take a llok at our plans</p>
-          <table>
+          <!-- WARN: Role is useless, added for HW -->
+          <table role="table">
             <caption>Sample Table</caption>
             <thead>
               <tr>
@@ -219,7 +230,8 @@
         </div>
 
         <div class="tabs is-boxed is-centered main-menu" id="nav">
-          <ul>
+          <!-- WARN: Role is useless, added for HW -->
+          <ul role="list">
             <li data-target="pane-1" id="1" class="is-active" tabindex="0" role="button">
               <a>
                 <span class="icon is-small"><i class="fa fa-image"></i></span>
@@ -398,7 +410,8 @@
               <label class="label" for="username">Username</label>
               <div class="control has-icons-left has-icons-right">
                 <input id="username" class="input is-success" type="text" name="username"
-                  placeholder="Enter your username" aria-describedby="usernameHelp" aria-invalid="false">
+                  placeholder="Enter your username" aria-describedby="usernameHelp"
+                  aria-invalid="false">
                 <span class="icon is-small is-left" aria-hidden="true">
                   <i class="fas fa-user"></i>
                 </span>
@@ -556,14 +569,16 @@
         <div class="columns">
           <div class="column is-3 is-offset-4">
             <div class="is-3 title"><b>News</b></div>
-            <ul>
+            <!-- WARN: Role is useless, added for HW -->
+            <ul role="list">
               <li><a href="/todo">Latest changes in specification</a></li>
               <li><a href="/todo">Our new courses and trainings</a></li>
             </ul>
           </div>
           <div class="column is-4">
             <div class="is-3 title"><b>Help</b></div>
-            <ul>
+            <!-- WARN: Role is useless, added for HW -->
+            <ul role="list">
               <li><a href="/todo" target="_blank" rel="noopener noreferrer">Useful links <span
                     class="visually-hidden">Opens in a new tab</span>
                 </a></li>

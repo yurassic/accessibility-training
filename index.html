@@ -16,8 +16,7 @@
 
   <body>
     <nav aria-label="Skip navigation links" class="visually-hidden">
-      <!-- WARN: Role is useless, added for HW -->
-      <ul role="list">
+      <ul>
         <li><a href="#main">Skip to main content</a></li>
       </ul>
     </nav>
@@ -30,7 +29,7 @@
               <a href="/" class="navbar-item logo-link">
                 <img src="./img/logo.png" alt="Best company logo">
               </a>
-              <button class="navbar-burger burger" data-target="navbarMenu" aria-haspopup="menu">
+              <button class="navbar-burger burger" data-target="navbarMenu" aria-haspopup="menu" aria-label="Mobile menu" aria-controls="navbarMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -38,9 +37,8 @@
             </div>
 
             <nav id="navbarMenu" class="navbar-menu">
-              <!-- WARN: Role is useless, added for HW -->
-              <ul class="navbar-end" role="list">
-                <li class="navbar-item">
+              <ul class="navbar-end" role="menu">
+                <li class="navbar-item" role="menuitem">
                   <a href="/" class="button is-white is-outlined">
                     <span class="icon">
                       <i class="fa fa-home"></i>
@@ -48,24 +46,25 @@
                     <span>Home</span>
                   </a>
                 </li>
-                <li class="navbar-item">
+                <li class="navbar-item" role="menuitem">
                   <button
-                    class="button is-white is-outlined with-sublist" aria-controls="services-menu" aria-haspopup="menu">
+                    class="button is-white is-outlined with-sublist" aria-controls="services-menu"
+                    aria-haspopup="menu" aria-expanded="false">
                     <span class="icon">
                       <i class="fab fa-superpowers"></i>
                     </span>
                     <span>Services</span>
                   </button>
-                  <!-- WARN: Role is useless, added for HW -->
-                  <ul class="sublist hidden" id="services-menu" role="list" aria-hidden="true">
-                    <li>Design</li>
-                    <li>Consult</li>
-                    <li>Engineer</li>
-                    <li>Operate</li>
-                    <li>Optimize</li>
+                  <!-- TODO: Remove hidden class and aria-hidden -->
+                  <ul class="sublist hidden" id="services-menu" role="menu" aria-hidden="true">
+                    <li role="menuitem">Design</li>
+                    <li role="menuitem">Consult</li>
+                    <li role="menuitem">Engineer</li>
+                    <li role="menuitem">Operate</li>
+                    <li role="menuitem">Optimize</li>
                   </ul>
                 </li>
-                <li class="navbar-item">
+                <li class="navbar-item" role="menuitem">
                   <a href="/todo" class="button is-white is-outlined">
                     <span class="icon">
                       <i class="fa fa-book"></i>
@@ -73,7 +72,7 @@
                     <span>Success stories</span>
                   </a>
                 </li>
-                <li class="navbar-item">
+                <li class="navbar-item" role="menuitem">
                   <a href="/todo" target="_blank" rel="noopener noreferrer"
                     class="button is-white is-outlined">
                     <span class="icon">
@@ -95,17 +94,13 @@
       <div class="hero-bg hero-body is-fullheight">
         <div class="container has-text-centered">
           <div class="column is-10 is-offset-1">
-            <!-- WARN: Role is useless, added for HW -->
-            <h1 class="title has-text-white" role="heading" aria-level="1">We have web accessibility
-              in
-              mind</h1>
+            <h1 class="title has-text-white">We have web accessibility in mind</h1>
           </div>
         </div>
       </div>
 
       <nav class="breadcrumb container" aria-label="breadcrumbs">
-        <!-- WARN: Role is useless, added for HW -->
-        <ul role="list">
+        <ul>
           <li><a href="#">Home</a></li>
           <li class="is-active" aria-current="page"><a href="#">Who we are?</a></li>
         </ul>
@@ -114,10 +109,9 @@
       <section class="section" id="subscription" aria-label="Subscription section">
         <div class="section-heading has-text-centered">
           <div class="column is-8 is-offset-2">
-            <!-- WARN: Role is useless, added for HW -->
-            <h2 class="title is-2" role="heading" aria-level="2">Would you like to get the latest
+            <h2 class="title is-2">Would you like to get the latest
               news?</h2>
-            <h3 class="subtitle is-5" role="heading" aria-level="3">Subscribe to our events, updates
+            <h3 class="subtitle is-5">Subscribe to our events, updates
               and
               more</h3>
             <form class="box has-background-grey-light">
@@ -160,8 +154,7 @@
           <h4 class="is-2 title">1989</h4>
           <p>On February 1989, seventeen people met to talk, ski, relax, and
             try to find common ground.</p>
-          <!-- WARN: Role is useless, added for HW -->
-          <ul role="list">
+          <ul>
             <li>- We all felt privileged to work with a group of people who
               held a set of compatible value.</li>
             <li>- We all want to deliver good products to customers.</li>
@@ -177,8 +170,7 @@
             gain in-demand skills.</p>
           <h4 class="is-2 title">2023</h4>
           <p>Please take a llok at our plans</p>
-          <!-- WARN: Role is useless, added for HW -->
-          <table role="table">
+          <table>
             <caption>Sample Table</caption>
             <thead>
               <tr>
@@ -230,9 +222,9 @@
         </div>
 
         <div class="tabs is-boxed is-centered main-menu" id="nav">
-          <!-- WARN: Role is useless, added for HW -->
-          <ul role="list" role="tablist">
-            <li data-target="pane-1" id="1" class="is-active" tabindex="0" role="tab" aria-controls="pane-1">
+          <ul role="tablist">
+            <li data-target="pane-1" id="1" class="is-active" tabindex="0" role="tab"
+              aria-controls="pane-1">
               <a>
                 <span class="icon is-small"><i class="fa fa-image"></i></span>
                 <span>Success stories</span>
@@ -255,7 +247,7 @@
         </div>
 
         <div class="tab-content container">
-          <div class="tab-pane is-active" id="pane-1" class="level" aria-labelledby="1">
+          <div class="tab-pane is-active" id="pane-1" class="level" aria-labelledby="1" role="tabpanel">
             <div class="container">
               <div class="columns features">
                 <div class="column is-6">
@@ -306,7 +298,7 @@
             </div>
           </div>
 
-          <div class="tab-pane" id="pane-3" aria-labelledby="3">
+          <div class="tab-pane" id="pane-3" aria-labelledby="3" role="tabpanel">
             <div class="columns medias">
               <div class="column">
                 <div class="media">
@@ -337,7 +329,7 @@
             </div>
           </div>
 
-          <div class="tab-pane" id="pane-4" aria-labelledby="4">
+          <div class="tab-pane" id="pane-4" aria-labelledby="4" role="tabpanel">
             <div class="columns is-centered">
               <div class="column is-three-quarters">
                 <h3 class="title has-text-centered">Inspired video</h3>
@@ -569,16 +561,14 @@
         <div class="columns">
           <div class="column is-3 is-offset-4">
             <div class="is-3 title"><b>News</b></div>
-            <!-- WARN: Role is useless, added for HW -->
-            <ul role="list">
+            <ul>
               <li><a href="/todo">Latest changes in specification</a></li>
               <li><a href="/todo">Our new courses and trainings</a></li>
             </ul>
           </div>
           <div class="column is-4">
             <div class="is-3 title"><b>Help</b></div>
-            <!-- WARN: Role is useless, added for HW -->
-            <ul role="list">
+            <ul>
               <li><a href="/todo" target="_blank" rel="noopener noreferrer">Useful links <span
                     class="visually-hidden">Opens in a new tab</span>
                 </a></li>
@@ -633,8 +623,7 @@
           </div>
         </div>
       </div>
-      <!-- WARNING: better to use button tag, added for HW -->
-      <div role="button" class="modal-close is-large"></div>
+      <button class="modal-close is-large"></button>
     </div>
 
     <!-- TODO: aria-modal should be set to true when modal is opened -->

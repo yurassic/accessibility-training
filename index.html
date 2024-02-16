@@ -118,7 +118,7 @@
               <div class="field is-grouped">
                 <p class="control is-expanded">
                   <label class="visually-hidden" for="email">Email</label>
-                  <input type="email" class="input" placeholder="Your email">
+                  <input type="email" class="input" placeholder="Your email" required>
                 </p>
                 <p class="control">
                   <input type="submit" class="button is-info" value="Notify Me">
@@ -391,10 +391,10 @@
           </div>
           <form class="column is-half is-offset-one-quarter box" action="#" method="post">
             <fieldset class="field">
-              <label class="label" for="name">Name</label>
+              <label class="label" for="name">Name*</label>
               <div class="control">
                 <input id="name" class="input" type="text" placeholder="Enter your name"
-                  name="name">
+                  name="name" required>
               </div>
             </fieldset>
 
@@ -416,11 +416,11 @@
             </fieldset>
 
             <fieldset class="field">
-              <label class="label" for="email">Email</label>
+              <label class="label" for="email">Email*</label>
               <div class="control has-icons-left has-icons-right">
                 <input id="email" class="input is-danger" type="email"
                   placeholder="Enter your email" name="email" value="hello@"
-                  aria-describedby="emailHelp" aria-invalid="true">
+                  aria-describedby="emailHelp" aria-invalid="true" required>
                 <span class="icon is-small is-left" aria-hidden="true">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -444,10 +444,10 @@
             </fieldset>
 
             <fieldset class="field">
-              <label class="label" for="message">Message</label>
+              <label class="label" for="message">Message*</label>
               <div class="control">
                 <textarea id="message" class="textarea" placeholder="Enter your message"
-                  name="message"></textarea>
+                  name="message" required></textarea>
               </div>
             </fieldset>
 

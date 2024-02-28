@@ -72,8 +72,10 @@
 })();
 
 
-(function SubMenuInit() {
+(function MenuInit() {
   // FUTURE IMPROVMENT: Add logic for many
+  const menuBtns = [...document.querySelectorAll('.navbar-item .button')];
+  const menuItems = menuBtns.map(btn => btn.closest('.navbar-item'));
   const subMenuBtn = document.querySelector('.button.with-sublist');
   const subMenu = document.querySelector("#" + subMenuBtn.dataset.target);
   const subMenuItems = subMenu.querySelectorAll('li[role="menuitem"]');
@@ -90,6 +92,38 @@
     subMenu.setAttribute("aria-hidden", "false");
     subMenuBtn.setAttribute("aria-expanded", "true");
     subMenuItems[0].focus(); // Set focus to the first menu item
+  }
+
+  function handleMenuNavigation(event) {
+    const key = event.key;
+    const currentIndex = menuItems.findIndex(item => item.contains(document.activeElement));
+    const btn = menuBtns[currentIndex];
+    const hasSubMenu = menuBtns[currentIndex].classList.contains('with-sublist');
+
+    switch (key) {
+      case "Tab":
+      case "ArrowRight":
+        event.preventDefault();
+        const nextIndex = (currentIndex + 1) % menuItems.length;
+        menuBtns[nextIndex].focus();
+        break;
+      case "ArrowLeft":
+        event.preventDefault();
+        const prevIndex = (currentIndex - 1 + menuItems.length) % menuItems.length;
+        menuBtns[prevIndex].focus();
+        break;
+      case "ArrowDown":
+        event.preventDefault();
+        if (hasSubMenu) {
+          showSubMenu();
+        }
+        break;
+      case "Space":
+      case "Enter":
+        event.preventDefault();
+        btn.click();
+        break;
+    }
   }
 
   function handleSubMenuNavigation(event) {
@@ -147,6 +181,10 @@
     } else {
       hideSubMenu();
     }
+  });
+
+  menuBtns.forEach(item => {
+    item.addEventListener("keydown", handleMenuNavigation);
   });
 
   subMenuItems.forEach(item => {
